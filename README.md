@@ -1,9 +1,10 @@
 # Metrics for hierarchical graph clustering 
 
-Experiments on both real and synthetic data for assessing the quality of a hierarchy representing a graph, see
+This Python module contains Python functions for assessing the quality of a hierarchy representing a graph, described in:
 
 [Learning Graph Representations by Dendrograms](http://arxiv.org/abs/1807.05087), 2018
 
+Experiments on both real and synthetic data are provided.
 
 ## Dependency
 
