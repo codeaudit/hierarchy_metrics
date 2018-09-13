@@ -1,20 +1,47 @@
-# Metrics for hierarchical graph clustering 
+# hierarchy_metric
 
-This Python module contains Python functions for assessing the quality of a hierarchy representing a graph, described in:
+This repository contains the reference implementation in Python of the relative entropy, a metric for assessing the quality of the hierachical clustering of a graph, as described in:
 
 [Learning Graph Representations by Dendrograms](http://arxiv.org/abs/1807.05087), 2018
 
-Experiments on both real and synthetic data are provided.
-
 ## Dependency
 
-This Python module depends on the `networkx` package,
+The implementation depends on the `networkx` package,
 which can be installed using `pip`.
 
 ```python
 sudo pip install networkx
 ```
 
+## Getting started
+
+Hierarchical clustering of a simple graph
+
+```python
+from hierarchy_metrics import *
+```
+
+Hierarchy of the Karate Club graph using Newman's algorithm:
+
+```python
+graph = nx.karate_club_graph()
+dendrogram = hierarchical_clustering(graph, algorithm = "newman")
+```
+
+Metrics (weighted):
+ 
+```python
+print(relative_entropy(graph, dendrogram), dasgupta_cost(graph, dendrogram))
+```
+1.3526175451991203 0.36143984220907294
+
+## Experiments
+
+Experiments on real and synthetic data are available as a Jupyter notebook:
+
+```python
+experiments.ipynb
+```
 
 ## License
 
