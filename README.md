@@ -32,8 +32,7 @@ Metrics (weighted):
 print("Quality:", relative_entropy(graph, dendrogram))
 print("Cost:", dasgupta_cost(graph, dendrogram))
 ```
-Quality: 1.3526175451991203
-
+Quality: 1.3526175451991203  
 Cost: 0.36143984220907294
 
 ## Experiments
