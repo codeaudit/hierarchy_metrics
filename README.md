@@ -15,8 +15,6 @@ sudo pip install networkx
 
 ## Getting started
 
-Hierarchical clustering of a simple graph
-
 ```python
 from hierarchy_metrics import *
 ```
@@ -31,9 +29,11 @@ dendrogram = hierarchical_clustering(graph, algorithm = "newman")
 Metrics (weighted):
  
 ```python
-print(relative_entropy(graph, dendrogram), dasgupta_cost(graph, dendrogram))
+print("Quality:", relative_entropy(graph, dendrogram))
+print("Cost:", dasgupta_cost(graph, dendrogram))
 ```
-1.3526175451991203 0.36143984220907294
+Quality: 1.3526175451991203
+Cost: 0.36143984220907294
 
 ## Experiments
 
