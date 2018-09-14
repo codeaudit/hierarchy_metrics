@@ -26,7 +26,7 @@ graph = nx.karate_club_graph()
 dendrogram = hierarchical_clustering(graph, algorithm = "newman")
 ```
 
-Metrics (weighted):
+Metrics:
  
 ```python
 print("Quality:", relative_entropy(graph, dendrogram))
@@ -44,7 +44,6 @@ experiments.ipynb
 ```
 
 ## License
-
 
 Released under the 3-clause BSD license.
 
