@@ -1,4 +1,4 @@
-# hierarchy_metric
+# hierarchy_metrics
 
 This repository contains the reference implementation in Python of the relative entropy, a metric for assessing the quality of the hierachical clustering of a graph, as described in:
 
